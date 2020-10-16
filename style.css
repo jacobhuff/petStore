@@ -1,53 +1,110 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: rgba(14, 13, 23, 0.1);
-  background: url(images/background.jpg) no-repeat center center fixed;
-  background-size: cover;
+  background-color: rgb(255, 255, 255);
   
 }
-#featured-products, #animals-section, #dog-products-section {
-  margin: 100px 0;
+#navbar {
+  background-color: rgb(73, 155, 113);
+  height: 75px;
 }
-.products, .animals, .dog-products {
-  display: flex;
-  justify-content: space-evenly;
+#navbar a {
+  color: white;
 }
-.products {
-  width: 952px;
-  margin: 0 auto;
-  border: 3px solid black;
-  border-radius: 5px;
-  padding: 20px;
-  background-color: rgba(14, 13, 23, 0.0);
+#featured {
+  width: 80%;
+  margin: 50px auto;
+  height: 400px;
 }
-.product {
-  display: flex;
-  flex-direction: column;
+.featured-row {
+  width: 100%;
 }
-.animals, .dog-products {
-  margin: 0 auto;
-  width: 1000px;
-  flex-wrap: wrap;
+.featured-box {
+  float: left;
+  width: 48%;
+  height: 400px;
 }
-.product img {
+#featured-pet {
+  background-image: url('images/dog.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 1% 0 0;
+}
+#featured-products {
+  float: right;
+  background-image: url('images/dogToy.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 1% 0;
+}
+.featured-header, .featured-button, .animal-header, .animal-button,
+.dog-header, .dog-button {
+  float: left;
+  width: 100%;
+  height: 50%;
+}
+.animal-header {
+  height: 20%;
+}
+.animal-button {
+  height: 80%;
+}
+.dog-header {
+  height: 80%;
+}
+.dog-button {
+  height: 20%;
+}
+.featured-header h2, .animal-header h1, .dog-header h4 {
+  color: white;
+  float: left;
+  margin: 30px 0 0 55px;
+}
+.featured-button button, .animal-button button, .dog-button button {
+  float: left;
+  margin: 80px 0 0 70px;
+  border: 2px solid white;
   width: 150px;
+  height: 50px;
+  color: black;
+  background-color: white;
 }
-.animal, .dog-product {
-  width: 300px;
-  height: 300px;
-  border: 3px solid black;
-  border-radius: 5px;
-  margin: 10px 0;
-  text-align: center;
+#animals-section {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+.animal {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0 20px 0;
+}
+.animal-header h1 {
+  margin: 30px 0 0 107px;
+}
+.animal-button button{
+  float: left;
+  margin: 10px 0 0 80px;
+  border: 2px solid white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.animal-button button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transition-duration: 0.5s;
+}
+#fish-header {
+  margin-left: 117px;
+}
+#reptiles-header {
+  margin-left: 77px;
+}
+#small-pets-header {
+  margin-left: 57px;
 }
 #dog, #cat, #bird, #fish, #reptile, #small-pet, #toy, #food, #treat, #shampoo, #collar, #apparel {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-#dog {
-  background-image: url('images/dog.jpg');
-  background-position-x: -110px;
 }
 #cat {
   background-image: url('images/cat.jpg');
@@ -57,12 +114,35 @@ body {
 }
 #fish {
   background-image: url('images/fish.jpg');
+  background-position-y: 40%;
 }
 #reptile {
   background-image: url('images/reptile.jpg');
+  background-position-y: 25%;
 }
 #small-pet {
   background-image: url('images/smallPet.jpg');
+  background-position-y: 85%;
+}
+.panels {
+  display: flex;
+  flex-direction: column;
+  
+}
+/* Dog Products */
+#dog-products-section {
+  width: 80%;
+  margin: 50px auto;
+}
+.dog-products {
+  width: 100%; 
+  height: 100vh;
+}
+.dog-product {
+  float: left;
+  width: 30.6%;
+  margin: 1%;
+  height: 300px;
 }
 #toy {
   background-image: url('images/toys.jpg');
@@ -83,23 +163,21 @@ body {
 #apparel {
   background-image: url('images/apparel.jpg');
 }
-.panels {
-  display: flex;
-  flex-direction: column;
-  
+.dog-header h4 {
+  margin: 200px 0 0 10px;
+  color: rgb(67, 126, 93);
+  font-weight: bold;
 }
-.panel {
-  margin: 10px auto;
-  width: 950px;
-  height: 300px;
-  border-radius: 5px;
-  display: flex;
+.dog-button button{
+  float: left;
+  margin: 0px 0 0 10px;
+  border: none;
+  color: white;
+  background-color: rgb(73, 155, 113);
 }
-.panel img {
-  width: 350px;
-  justify-self: start;
-  border: 3px solid black;
-  border-radius: 3px;
+.dog-button button:hover {
+  background-color: rgba(73, 155, 113, 0.8);
+  transition-duration: 0.5s;
 }
 .footer {
   position: relative;
@@ -111,21 +189,8 @@ body {
   text-align: center;
 }
 @media(max-width: 1210px) {
-  .animals {
-    width: 700px;
-  }
-  .animal {
-    width: 200px;
-    height: 200px;
-  }
+
 }
 @media(max-width: 920px) {
-  .animals {
-    width: 350px;
-  }
-  .animal {
-    align-content: center;
-    width: 250px;
-    height: 250px;
-  }
+
 }
