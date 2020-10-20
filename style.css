@@ -1,10 +1,14 @@
+:root {
+  --secondary-color:  rgb(83, 190, 137);
+  --secondary-color-hover: rgba(83, 190, 137, 0.8);
+}
 body {
   font-family: 'Poppins', sans-serif;
   background-color: rgb(255, 255, 255);
   
 }
 #navbar {
-  background-color: rgb(73, 155, 113);
+  background-color: var(--secondary-color);
   height: 75px;
 }
 #navbar a {
@@ -54,7 +58,7 @@ body {
 .dog-button {
   height: 20%;
 }
-.featured-header h2, .animal-header h1, .dog-header h4 {
+.featured-header h2, .animal-header h1, .dog-header h3 {
   color: white;
   float: left;
   margin: 30px 0 0 55px;
@@ -132,11 +136,11 @@ body {
 /* Dog Products */
 #dog-products-section {
   width: 80%;
-  margin: 50px auto;
+  margin: 100px auto 0px auto;
 }
 .dog-products {
   width: 100%; 
-  height: 100vh;
+  height: 750px;
 }
 .dog-product {
   float: left;
@@ -149,7 +153,7 @@ body {
 } 
 #food {
   background-image: url('images/food.jpg');
-  background-position-y: -40px;
+  background-position-y: 40%;
 } 
 #treat {
   background-image: url('images/treat.jpg');
@@ -162,28 +166,28 @@ body {
 } 
 #apparel {
   background-image: url('images/apparel.jpg');
+  background-position-y: 33%;
 }
-.dog-header h4 {
-  margin: 200px 0 0 10px;
-  color: rgb(67, 126, 93);
-  font-weight: bold;
+.dog-header h3 {
+  margin: 10px 0 0 10px;
+  color: var(--secondary-color);
 }
 .dog-button button{
   float: left;
   margin: 0px 0 0 10px;
   border: none;
   color: white;
-  background-color: rgb(73, 155, 113);
+  background-color: var(--secondary-color);
 }
 .dog-button button:hover {
-  background-color: rgba(73, 155, 113, 0.8);
+  background-color: var(--secondary-color-hover);
   transition-duration: 0.5s;
 }
 .footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: rgba(14, 13, 23, 0.1);
+  background-color: var(--secondary-color);
   height: 100px;
   line-height: 100px;
   text-align: center;
