@@ -140,7 +140,7 @@ body {
 }
 .dog-products {
   width: 100%; 
-  height: 750px;
+  height: 650px;
 }
 .dog-product {
   float: left;
@@ -182,6 +182,39 @@ body {
 .dog-button button:hover {
   background-color: var(--secondary-color-hover);
   transition-duration: 0.5s;
+}
+.product-section {
+  margin: 0 auto;
+  width: 80%;
+}
+.product-row {
+  width: 100%;
+  height: 225px;
+  margin: 75px 0;
+}
+.product-header {
+  width: 100%;
+  float: left;
+  margin-bottom: 25px;
+}
+.product {
+  float: left;
+  margin: 0 1%;
+  width: 18%;
+}
+.product img {
+  width: 100px;
+}
+.product button {
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  width: 100px;
+  height: 35px;
+  transition-duration: 0.5s;
+}
+.product button:hover {
+  background-color: var(--secondary-color-hover);
 }
 .footer {
   position: relative;
