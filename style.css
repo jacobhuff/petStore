@@ -5,7 +5,8 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: rgb(255, 255, 255);
-  
+  margin: 0;
+  padding: 0;
 }
 #navbar {
   background-color: var(--secondary-color);
@@ -144,7 +145,7 @@ body {
 }
 .dog-product {
   float: left;
-  width: 30.6%;
+  width: 31.33%;
   margin: 1%;
   height: 300px;
 }
@@ -219,6 +220,19 @@ body {
 }
 .product button:hover {
   background-color: var(--secondary-color-hover);
+}
+.about-banner {
+  height: calc(100vh - 75px);
+  background-image: url('images/aboutBanner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.about-banner h2 {
+  line-height: 25vh;
+  font-size: 86px;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
 }
 .footer {
   position: relative;

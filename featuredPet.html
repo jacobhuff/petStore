@@ -31,7 +31,7 @@
           <div class="navbar-nav">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="featuredPet.html">Featured Pet</a>
-            <a class="nav-link" href="#product-id">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </div>
         </div>
       </nav>
@@ -94,47 +94,12 @@
     <!-- Product Sections -->
     <div class="product-section">
       <!-- Toys -->
-      <div class="product-row">
-        <h1 class="product-header">Toys</h1>
-        <div class="product">
-          <div class="product-img">
-            <img src="images/toyProduct.png" alt="">
-          </div>
-          <p>$8.99</p>
-          <button>Buy</button>
-        </div>
-        <div class="product">
-          <div class="product-img">
-            <img src="images/toyProduct.png" alt="">
-          </div>
-          <p>$8.99</p>
-          <button>Buy</button>
-        </div>
-        <div class="product">
-          <div class="product-img">
-            <img src="images/toyProduct.png" alt="">
-          </div>
-          <p>$8.99</p>
-          <button>Buy</button>
-        </div>
-        <div class="product">
-          <div class="product-img">
-            <img src="images/toyProduct.png" alt="">
-          </div>
-          <p>$8.99</p>
-          <button>Buy</button>
-        </div>
-        <div class="product">
-          <div class="product-img">
-            <img src="images/toyProduct.png" alt="">
-          </div>
-          <p>$8.99</p>
-          <button>Buy</button>
-        </div>
+      <div onclick="displayShop()" class="product-row" id="toys-row">
+
       </div>
       <!-- Food -->
       <div class="product-row">
-        <h1 class="product-header">Food</h1>
+        <h2 class="product-header">Food</h2>
         <div class="product">
           <div class="product-img">
             <img src="images/foodProduct.png" alt="">
@@ -173,7 +138,7 @@
       </div>
       <!-- Treats -->
       <div class="product-row">
-        <h1 class="product-header">Treats</h1>
+        <h2 class="product-header">Treats</h2>
         <div class="product">
           <div class="product-img">
             <img src="images/treatProduct.png" alt="">
@@ -212,7 +177,7 @@
       </div>
       <!-- Shampoo -->
       <div class="product-row">
-        <h1 class="product-header">Shampoo</h1>
+        <h2 class="product-header">Shampoo</h2>
         <div class="product">
           <div class="product-img">
             <img src="images/shampooProduct.png" alt="">
@@ -251,7 +216,7 @@
       </div>
       <!-- Collars -->
       <div class="product-row">
-        <h1 class="product-header">Collars</h1>
+        <h2 class="product-header">Collars</h2>
         <div class="product">
           <div class="product-img">
             <img src="images/collarProduct.png" alt="">
@@ -290,7 +255,7 @@
       </div>
       <!-- Apparel -->
       <div class="product-row">
-        <h1 class="product-header">Apparel</h1>
+        <h2 class="product-header">Apparel</h2>
         <div class="product">
           <div class="product-img">
             <img src="images/apparelProduct.png" alt="">
@@ -334,6 +299,8 @@
 
     </div>
   </div>
+  <!-- app js -->
+  <script src="app.js"></script>
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
