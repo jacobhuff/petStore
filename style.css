@@ -1,5 +1,5 @@
 :root {
-  --secondary-color:  rgb(83, 190, 137);
+  --secondary-color:  rgb(52, 134, 70);
   --secondary-color-hover: rgba(83, 190, 137, 0.8);
 }
 body {
@@ -222,6 +222,7 @@ body {
   background-color: var(--secondary-color-hover);
 }
 .about-banner {
+  width: 100%;
   height: calc(100vh - 75px);
   background-image: url('images/aboutBanner.jpg');
   background-position: center;
@@ -229,10 +230,44 @@ body {
   background-attachment: scroll;
 }
 .about-banner h2 {
-  line-height: 25vh;
+  padding-top: 75px;
   font-size: 86px;
-  font-family: 'Varela Round', sans-serif;
+  color: black;
+}
+.about-banner button {
+  height: 50px;
+  width: 175px;
+  border: 3px solid black;
+  border-radius: 3px;
+  background-color: transparent;
+  color: black;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.about-banner button:hover {
+  background-color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
   color: white;
+}
+.about-grid {
+  height: 810px;
+  width: 80%;
+  margin: 50px auto;
+}
+.about-item {
+  width: 48%;
+  height: 400px;
+  margin: 1%;
+  float: left;
+  text-align: center;
+}
+.about-item h2 {
+  margin: 10px;
+  color: black;
+  font-weight: bold;
+}
+.about-item img {
+  width: 65%;
 }
 .footer {
   position: relative;
